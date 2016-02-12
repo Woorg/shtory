@@ -1,0 +1,72 @@
+.advantages
+	float right
+	width 456px
+	&__title
+		margin-bottom 12px
+		font-pfbld(24px,1)
+		text-transform uppercase
+		color #3e3a3c
+	&__text
+		font-pfreg(18px,1)
+		color #3d3d3d
+	&__list
+		margin-top 36px
+	&__item
+		position relative
+		margin-bottom 21px
+		padding-left 82px
+	&__item-title
+		position relative
+		padding-bottom 8px
+		margin-bottom 10px
+		font-pfbld(18px,1)
+		color #5c3255
+		&:after
+			position absolute
+			bottom 0
+			left 0
+			content ''
+			width 50px
+			height 1px
+			background-color #ffa2c9
+	&__item-text
+		font-pfreg(14px,18px)
+		color #4d4d4d
+	&__item-icon
+		position absolute
+		top 0
+		left 0
+		content ""
+		width 66px
+		height 66px
+		background-color #798895
+		border-radius 4px
+		&:after
+			position absolute
+			top 50%
+			left 50%
+			content ""
+		&_1
+			&:after
+				margin-top -21px
+				margin-left -14px
+				bg($advantages_icon_1)
+		&_2
+			&:after
+				margin-top -22px
+				margin-left -22px
+				bg($advantages_icon_2)
+		&_3
+			&:after
+				margin-top -15px
+				margin-left -15px
+				bg($advantages_icon_3)
+		&_4
+			&:after
+				margin-top -12px
+				margin-left -22px
+				bg($advantages_icon_4)
+
+
+
+

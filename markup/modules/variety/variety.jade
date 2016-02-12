@@ -1,0 +1,10 @@
+include ../content-variety/content-variety
+include ../sidebar-variety/sidebar-variety
+
+
+mixin variety()
+	+b.inner.variety
+		+e.in
+			+content-variety()
+			+sidebar-variety()
+

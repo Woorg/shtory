@@ -1,0 +1,86 @@
+// Mixins.
+
+m-nl()
+	margin 0
+	padding 0
+	text-indent 0
+	list-style none
+	list-style-position outside
+
+m-cf()
+	&:before, &:after
+		display table
+		content ""
+
+	&:after
+		clear both
+
+	.lt-ie8 &
+		zoom 1
+
+
+m-blocks-justify()
+	text-align justify
+	text-justify newspaper
+
+
+// Clear the float on any element.
+clearfix()
+	&:after
+		display table
+		clear both
+		content ''
+
+// Fix no working `-webkit-text-size-adjust: 100%;` in Android.
+fix-text-size-adjust()
+	background-image linear-gradient(transparent, transparent)
+
+
+hide-text()
+	overflow hidden
+	text-indent 110%
+	white-space nowrap
+
+
+// Set element size
+size($width, $height = $width)
+	width $width
+	height $height
+
+// Set margin on left & right
+margin-x($margin)
+	margin-left $margin
+	margin-right $margin
+
+// Set margin on top & bottom
+margin-y($margin)
+	margin-top $margin
+	margin-bottom $margin
+
+// Set pading on left & right
+padding-x($padding)
+	padding-left $padding
+	padding-right $padding
+
+// Set padding on top & bottom
+padding-y($padding)
+	padding-top $padding
+	padding-bottom $padding
+
+
+// You can add your own mixins here:
+
+font-pfblk(fs, lh)
+	font normal fs / lh 'pf_dindisplay_problack', sans-serif
+font-pfbld(fs, lh)
+	font normal fs / lh 'pf_dindisplay_probold', sans-serif
+font-pfreg(fs, lh)
+	font normal fs / lh 'pf_dindisplay_proregular', sans-serif
+font-pfmed(fs, lh)
+	font normal fs / lh 'pf_dindisplay_promedium', sans-serif
+font-pfit(fs, lh)
+	font normal fs / lh 'pf_dindisplay_proitalic', sans-serif
+font-latreg(fs, lh)
+	font normal fs / lh 'latoregular', sans-serif
+font-tahreg(fs, lh)
+	font normal fs / lh 'Tahoma', 'Verdana', 'Segoe', sans-serif

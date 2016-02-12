@@ -1,0 +1,32 @@
+include ../callback/callback
+
+
+mixin footer()
+	+b.footer
+		+e.in
+			+e.row
+				+b.phone-bottom
+					+e.title Звоните
+					+e.text По телефону:
+						+e.number 8 (985) 785 06 19
+					+e.link или
+						+e('a')(href='#callback').callback-js Закажите звонок
+				+b.email-bottom
+					+e.title Пишите нам
+					+e.link Наша почта:
+						+e('a')(href='mailto:info@magazin-shtori.ru') info@magazin-shtori.ru
+				+b.address-bottom
+					+e.title Наш адрес
+					+e.text г. Москва, Полесский проезд, д. 16, стр. 1, <br/> офис 423, 4 этаж, 2 подъезд
+				+b.social-bottom
+					+e.title Мы в интернете
+					+e('ul').list
+						+e('li').item._1 Instagram
+						+e('li').item._2 Vkontakte
+						+e('li').item._3 Social 3
+
+			+e('small').copyright © 2011-2014 Все права защищены, Ателье по пошиву штор
+
+
+
+	+callback()

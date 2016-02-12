@@ -1,0 +1,9 @@
+include ../order/order
+include ../advantages/advantages
+
+mixin bottom()
+	+b.bottom
+		+e.in
+			+order()
+			+advantages()
+

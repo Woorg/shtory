@@ -1,0 +1,100 @@
+.custom
+	&__in
+		padding-top 64px
+		padding-bottom 72px
+	&__top
+		margin-bottom 20px
+		clearfix()
+	&__image
+		margin-right 30px
+		margin-bottom 30px
+		padding 15px
+		width 460px
+		height 300px
+		float left
+		box-shadow 0 0 10px #e5e5e5
+		img
+			max-width 100%
+			height auto
+		&_small
+			margin-right 28px
+			margin-bottom 28px
+			padding 15px
+			size(306px, 221px)
+	&__title
+		margin-bottom 20px
+		padding-top 29px
+		font-pfbld(20px,24px)
+		text-transform uppercase
+	.text
+		&_short
+			font-pfit(16px,24px)
+			margin-bottom 22px
+
+	/*MODIFIER*/
+
+	&_v2
+		margin-top 48px
+		.custom__top
+			margin-bottom 31px
+		.custom__title
+			margin-bottom 9px
+			padding-top 0
+		.text_short
+			margin-bottom 14px
+			white-space nowrap
+
+.carousel-second
+	position relative
+	padding 0 40px
+	clearfix()
+	&__item
+		margin-right 56px
+		float left
+		&:last-child
+			margin-right 0
+	&__link
+		text-decoration none
+	&__item-img
+		margin-bottom 9px
+		padding 5px
+		width 166px
+		min-height 136px
+		display block
+		background $white
+		box-shadow 0 0 10px #e5e5e5
+		img
+			width 156px
+			height 126px
+	&__title
+		display block
+		font-pfreg(16px,24px)
+		color #575656
+	.owl-nav
+		position absolute
+		top 50%
+		margin-top -22px
+		width 100%
+		z-index 1
+	.owl-prev,
+	.owl-next
+		position absolute
+		top 50%
+		margin-top -6px
+		text-indent -9999px
+	.owl-next
+		right 40px
+		bg($arrowright)
+	.owl-prev
+		left -40px
+		bg($arrowleft)
+	.owl-stage-outer
+		padding 0
+
+.carousel-third
+	margin-bottom 65px
+	padding 0 0px 0 26px
+	.owl-prev
+		left -24px
+	.owl-next
+		right 24px

@@ -1,0 +1,99 @@
+.callback
+	position relative
+	margin auto
+	// padding 5px
+	width 347px
+	min-height 371px
+	background-color #fff
+	text-align center
+	border 5px solid #ededed
+	border-radius 6px 5px 5px 6px
+	box-shadow 0 0 20px rgba(1, 1, 1, 0.45)
+	&__w
+		padding 46px 25px 19px
+	&__title
+		margin-bottom 28px
+		font-pfbld(22px,1)
+		text-transform uppercase
+	&__text
+		margin-bottom 24px
+		font-pfbld(16px,23px)
+	&__input
+		position relative
+		margin-bottom 17px
+		input
+			width 280px
+			height 45px
+			font-pfreg(13px,44px)
+			color #AFAFAD
+			text-transform uppercase
+			border 2px solid #ebebeb
+			border-radius 30px
+		.callback__input-icon
+			position absolute
+			top 5px
+			width 34px
+			height 34px
+			background #52646f
+			border-radius 50%
+			&:after
+				position absolute
+				content ""
+				top 50%
+				display block
+		&_v1
+			input
+				padding-left 48px
+			.callback__input-icon
+				left 9px
+				&:after
+					left 9px
+					margin-top -10px
+					bg($person_icon)
+		&_v2
+			input
+				padding-left 18px
+				padding-right 50px
+			.callback__input-icon
+				right 9px
+				&:after
+					right 8px
+					margin-top -9px
+					bg($phone_icon)
+	&__submit
+		input
+			padding 17px 28px 17px
+			border none
+			display inline-block
+			background #F25D73
+			font-pfbld(16px,1)
+			color #fff
+			text-transform uppercase
+			border-radius 30px
+	&__close
+		position absolute
+		top 0
+		right 0
+		content ""
+		text-indent -9999px
+		bg($close)
+
+	button.mfp-close
+		position absolute
+		top -20px
+		right -19px
+		content ""
+		size 30px
+		background-color #fff
+		text-indent -9999px
+		border-radius 50%
+		box-shadow 0 2px 8px rgba(1, 1, 1, 0.2)
+		&:after
+			position absolute
+			top 50%
+			left 50%
+			content ""
+			margin-top -6px
+			margin-left -6px
+			bg($close)
+

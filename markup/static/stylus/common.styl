@@ -1,0 +1,71 @@
+// Common styles of the project
+
+// html, body
+//     height 100%
+
+
+// .page
+//     // Стили для body
+
+// .page__wrapper
+//     min-height 100%
+//     margin-bottom -50px
+
+
+// * html .page__wrapper
+//     height 100%
+
+// .page__buffer
+//     height 50px
+
+base
+	background $white
+	color #3e3a3c
+.layout
+	min-width 1170px
+
+.in
+	margin auto
+	padding-left 15px
+	padding-right 15px
+	width 1170px
+
+
+.header,
+.main-nav,
+.main-slider,
+.about,
+.clients,
+.choose,
+.custom,
+.description,
+.bottom,
+.footer,
+.main,
+.catalog,
+.category,
+.shtory,
+.inner
+	&__in
+		@extend .in
+
+.main
+	background url('../img/general/bg-2.png') 0 0 repeat
+	&__in
+		padding-top 34px
+
+.inner
+	border-top 1px solid #f4f4f4
+	border-bottom 1px solid #f4f4f4
+	background $white
+	&__in
+		padding-top 52px
+		padding-bottom 52px
+		clearfix()
+
+img
+	display block
+
+
+
+

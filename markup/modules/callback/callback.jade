@@ -1,0 +1,17 @@
+mixin callback(data)
+	+b.callback.mfp-hide#callback
+		+e.w
+			+e('h2').title Заказать звонок
+			+e('p').text оставьте контакты и наш менеджер свяжется с Вами чарез 15 минут
+			+e('form')(method='post')
+				+e.input._v1
+					+e('input')(type='text' name='callback_name' placeholder='Введите имя:' value='')
+					+e.input-icon
+				+e.input._v2
+					+e('input')(type='text' name='callback_phone' placeholder='Введите телефон:' value='')
+					+e.input-icon
+				+e.submit
+					+e('input')(type='submit' value='Перезвоните мне')
+
+
+

@@ -1,0 +1,16 @@
+mixin order()
+	+b.order
+		+e('h2').title Заказать бесплатный выезд дизайнера
+		+e('p').text Позвоните по телефону +7 (495) 123-45-67 или заполните форму:
+		+e('form')(method='post')
+			+e.input
+				+e('input')(type='text' placeholder='Как вас зовут?' value='' name='name')
+			+e.input._half
+				+e('input')(type='text' placeholder='Телефон' value='' name='phone')
+			+e.sep или
+			+e.input._half._half-2
+				+e('input')(type='text' placeholder='Эл. почта' value='' name='email')
+			+e.textarea <textarea placeholder='Текст вашего сообщения...'></textarea>
+			+e.submit
+				+e('button') ОТПРАВИТЬ ЗАЯВКУ
+

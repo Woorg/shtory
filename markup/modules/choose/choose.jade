@@ -1,0 +1,58 @@
+mixin choose()
+	+b('section').choose
+		+e.in
+			+e('h2').title Подобрать шторы
+
+			+b.tabs
+				+e.nav
+					+e('a').nav-link._active(href='#tab-1' data-tab="tab-1") По интерьеру
+					+e('a').nav-link(href='#tab-2' data-tab="tab-2") По виду штор
+					+e('a').nav-link(href='#tab-3' data-tab="tab-3") По популярности
+				+e.content._active._1#tab-1
+					+b('ul').carousel._first
+						+e('li').item
+							+e('a').link(href='#' title='some title')
+								+e.image
+									+e('img')(src='static/img/content/choose_img_1.jpg' alt='custom image')
+								+e.title Шторы с ламбрекеном
+								+e.text Декор дополненный мягким, жестким или комбинированным ламбрекеном — универсальное украшение для любого интерьера. Дополняя полотнища портьер, ламбрекен может внести в дизайн ноту игривост.
+						+e('li').item
+							+e('a').link(href='#' title='some title')
+								+e.image
+									+e('img')(src='static/img/content/choose_img_2.jpg' alt='custom image')
+								+e.title Английские шторы
+								+e.text Нарочитая грубоватость и контрастность, плотные ткани и строгость — для квартиры и дома за городом. Прекрасный вариант для использования зимой.
+						+e('li').item
+							+e('a').link(href='#' title='some title')
+								+e.image
+									+e('img')(src='static/img/content/choose_img_3.jpg' alt='custom image')
+								+e.title Современные шторы
+								+e.text Декор дополненный мягким, жестким или комбинированным ламбрекеном — универсальное украшение для любого интерьера. Дополняя полотнища портьер, ламбрекен может внести в дизайн ноту игривост.
+						+e('li').item
+							+e('a').link(href='#' title='some title')
+								+e.image
+									+e('img')(src='static/img/content/choose_img_4.jpg' alt='custom image')
+								+e.title Элитные шторы
+								+e.text Современный дизайн оформления окна, гармония стиля и практичности - Ваш характер и собственное восприятие.
+						+e('li').item
+							+e('a').link(href='#' title='some title')
+								+e.image
+									+e('img')(src='static/img/content/choose_img_4.jpg' alt='custom image')
+								+e.title Элитные шторы
+								+e.text Современный дизайн оформления окна, гармония стиля и практичности - Ваш характер и собственное восприятие.
+
+
+
+					//- +b.carousel-nav
+					//- 	+e('a').link._next(href='#') Вперед
+					//- 	+e('a').link._prev(href='#') Назад
+
+
+				+e.content._2#tab-2
+
+				+e.content._3#tab-3
+
+
+
+
+

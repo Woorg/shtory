@@ -1,0 +1,116 @@
+.designer-card
+	margin-bottom 80px
+	padding 11px 12px 31px 12px
+	background-color #FAFAFA
+	background-color rgba(245, 245, 245, 0.45)
+	border 1px solid #f4f4f5
+	&__title
+		margin-bottom 5px
+		font-pfbld(18px, 20px)
+	&__position
+		margin-bottom 19px
+		font-pfit(14px, 18px)
+		color #a5a5a5
+	&__image
+		margin-right 10px
+		margin-bottom 10px
+		padding 5px
+		float left
+		size(105px, 129px)
+		background-color white
+		box-shadow 0 0 10px #e5e5e5
+		img
+			size(95px, 118px)
+	&__text
+		margin-bottom 25px
+		font-pfreg(13px, 18px)
+		&_1
+			padding-top 8px
+		&_2
+			margin-bottom 27px
+	&__phone-w
+		font-pfreg(14px, 18px)
+	&__phone-title
+		margin-bottom 16px
+		a
+			margin-left 5px
+			display inline-block
+			color #805175
+			text-decoration none
+			line-height 16px
+			border-bottom 1px dotted #805175
+	&__phone-number
+		font-pfbld(24px, 1)
+
+	/*MODIFIER*/
+
+	&_wide
+		margin-bottom 59px
+		padding 10px
+		.designer-card__image
+			margin-right 41px
+			margin-bottom 2px
+			width 196px
+			height 226px
+			img
+				max-width 100%
+				width auto
+				height auto
+		.designer-card__title
+			margin-bottom 24px
+			padding-top 31px
+			font-pfreg(24px,1)
+		.designer-card__text
+			margin-bottom 28px
+			font-pfreg(14px,18px)
+
+		.designer-card__phone-w
+			font-size 0
+			clearfix()
+		.designer-card__phone-text
+			margin-right 12px
+			display inline-block
+			vertical-align top
+			font-pfreg(14px,18px)
+			a
+				padding-left 4px
+		.designer-card__phone-number
+			display inline-block
+			vertical-align top
+			font-pfbld(24px,14px)
+
+
+.portfolio
+	padding-left 10px
+	padding-right 10px
+	&__title
+		margin-bottom 16px
+		font-pfbld(18px,1)
+	&__item
+		margin-bottom 24px
+		text-align center
+	&__link
+		display block
+		color #575656
+		text-decoration none
+	&__item-image
+		margin-bottom 12px
+		padding 5px
+		display block
+		width 242px
+		height 153px
+		background-color white
+		box-shadow 0 0 10px #e5e5e5
+		img
+			width 232px
+			height 143px
+	&__item-title
+		margin-bottom 5px
+		display block
+		font-pfbld(18px, 24px)
+	&__item-price
+		display block
+		font-pfreg(18px, 1)
+		color #a5a5a5
+
+

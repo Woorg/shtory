@@ -1,0 +1,248 @@
+
+.catalog
+	border-top 1px solid #f4f4f4
+	border-bottom 1px solid #f4f4f4
+	padding-top 32px
+	background $white
+	&__items
+		border-bottom 2px dotted #b3b3b3
+		clearfix()
+	&__item
+		margin-right 18px
+		margin-bottom 35px
+		width 210px
+		display inline-block
+		vertical-align top
+		&:nth-child(5n + 5)
+			margin-right 0
+	&__link
+		display block
+		color #4d4d4d
+		text-decoration none
+	&__item-img
+		margin-bottom 12px
+		padding 5px
+		display block
+		width 210px
+		height 190px
+		background-color white
+		box-shadow 0 0 10px #e5e5e5
+		img
+			size 200px 180px
+	&__item-title
+		margin-bottom 10px
+		padding-left 6px
+		display block
+		font-pfmed(18px,24px)
+		color #f05f75
+	&__item-price
+		padding-left 6px
+		display block
+		font-pfbld(20px,1)
+		sub
+			display inline-block
+			vertical-align baseline
+			font-pfreg(16px, 20px)
+
+
+.popup-catalog
+	position relative
+	margin auto
+	width 944px
+	min-height 700px
+	&__top
+		margin-bottom 20px
+		min-height 60px
+		clearfix()
+	&__title
+		margin-top 22px
+		width 570px
+		display inline-block
+		vertical-align middle
+		float left
+		font-pfblk(30px,1)
+		color $white
+	&__buttons
+		float right
+		font-size 0
+	&__button
+			position relative
+			display inline-block
+			vertical-align top
+			border-radius 3px
+			text-decoration none
+	&__button_more
+		border-right 1px solid white
+		padding 22px 29px 18px 43px
+		background $white
+		font-pfreg(20px,1)
+		color #4d4d4d
+		border-radius 3px 0 0 3px
+		&:after
+			position absolute
+			top 0
+			right -11px
+			content " "
+			width 0
+			height 0
+			border-style solid
+			border-width 30px 0 30px 10px
+			border-color transparent transparent transparent #ffffff
+			z-index 10
+	&__button_order
+		padding 22px 29px 18px 31px
+		background-color #f25d73
+		font-pfblk(20px,1)
+		color $white
+	// &__w
+	button.mfp-close
+		top 79px
+		right -25px
+		background-color transparent
+		bg($close_big)
+		text-indent -9999px
+
+	&__body
+		position relative
+		clearfix()
+	&__footer
+		padding 0 24px 20px 30px
+		height 219px
+		background $white
+
+
+.catalog-slider
+	position relative
+	height 492px
+	overflow hidden
+	&__item
+		width 944px
+		height 492px
+		float left
+	&__link
+		display block
+		img
+			min-width 100%
+			height auto
+	&__zoom
+		position absolute
+		top 0
+		left 0
+		width 60px
+		height 60px
+		display none
+		background #000
+		background rgba(0,0,0,.77)
+		&:after
+			position absolute
+			top 50%
+			left 50%
+			content ""
+			margin-top -16px
+			margin-left -16px
+			bg($zoom)
+	&__link
+		&:hover
+			.catalog-slider__zoom
+				display block
+
+.catalog-thumbnails
+	position absolute
+	top 0
+	right 0
+	content ""
+	padding 16px 14px 107px
+	width 94px
+	height 100%
+	background rgba(0,0,0,.7)
+	z-index 100
+	&__link
+		margin-bottom 13px
+		border 2px solid transparent
+		display block
+		width 64px
+		height 64px
+		img
+			min-width 100%
+			height auto
+		&:hover,
+		&.active
+			border 2px solid #f25d73
+
+
+.popup-tabs
+	padding-top 20px
+	clearfix()
+	&__nav
+		margin-bottom 28px
+		clearfix()
+	&__nav-link
+		margin-right 19px
+		border-bottom 1px dotted #c1c1c1
+		display inline-block
+		font-pfreg(14px,12px)
+		color #c1c1c1
+		text-decoration none
+		&:hover
+			border-bottom 1px dotted transparent
+		&_active
+			border-bottom 1px dotted #4d4d4d
+			font-pfbld(14px,12px)
+			color #4d4d4d
+	&__content
+		min-height 10px
+		display none
+		&_active
+			display block
+	// 	&_1
+
+	// 	&_2
+	&__desc
+		float left
+		width 230px
+		clearfix()
+	&__desc-row
+		margin-bottom 20px
+		font-size 0
+		display table
+	&__desc-title
+		display table-cell
+		min-width 90px
+		font-latreg(13px,18px)
+		font-style italic
+	&__desc-val
+		display table-cell
+		min-width 120px
+		a
+			font-latreg(13px,18px)
+			color #4d4d4d
+			text-decoration underline
+			&:hover
+				text-decoration none
+
+
+
+
+.additional
+	clearfix()
+	&__item
+		margin-right 36px
+		width 149px
+		float left
+		&:last-child
+			margin-right 0
+	&__link
+		display block
+		text-decoration none
+		img
+			margin-bottom 11px
+			width 149px
+			height 90px
+	&__title
+		font-pfreg(12px,14px)
+		color #4d4d4d
+		text-decoration underline
+	&__link
+		&:hover
+			.additional__title
+				text-decoration none

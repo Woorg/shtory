@@ -1,0 +1,37 @@
+
+mixin header()
+	+b.header
+		+e.in
+			+b.logo Магазин шторы
+			+b.address г. Москва, Полесский проезд, д. 16, стр. 1, <br/>офис 423, 4 этаж, 2 подъезд
+			+b.social
+				+e.title Мы в интернете:
+				+e('ul').list
+					+e('li').item._1 Instagram
+					+e('li').item._2 Vkontakte
+					+e('li').item._3 Social 3
+			+b.mail
+				+e.title Наша почта:
+				+e('a').link(href='mailto:info@magazin-shtori.ru') info@magazin-shtori.ru
+			+b.phone
+				+e.number 8 (985) 785 06 19
+				+e('a').link.callback-js(href='#callback') Заказать обратный звонок
+		+b('nav').main-nav
+			+e.in
+				+e('ul').list
+					+e('li').item
+						+e('a').link(href='#link') О Компании
+					+e('li').item
+						+e('a').link(href='#link') Каталог штор
+					+e('li').item
+						+e('a').link(href='#link') Виды штор
+					+e('li').item
+						+e('a').link(href='#link') Услуги и цены
+					+e('li').item
+						+e('a').link(href='#link') Наши дизайнеры
+					+e('li').item
+						+e('a').link(href='#link') отзывы
+					+e('li').item
+						+e('a').link(href='#link') Контакты
+
+

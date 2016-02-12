@@ -1,0 +1,257 @@
+include ../pagination/pagination
+
+
+mixin catalog(data)
+	+b.catalog.inner
+		+e.in
+			+e.items
+				+e.item
+					+e('a').link(href='#catalog-popup')
+						+e.item-img
+							+e('img')(src='%=staticPrefix=%img/assets/catalog/catalog_item_1.jpg' alt='product')
+						+e.item-title &#171;Мусс из лесных ягод&#187;
+						+e.item-price <sub>от</sub> 25 000 <sub>руб.</sub>
+				+e.item
+					+e('a').link(href='#catalog-popup')
+						+e.item-img
+							+e('img')(src='%=staticPrefix=%img/assets/catalog/catalog_item_2.jpg' alt='product')
+						+e.item-title &#171;Окно в модерн&#187;
+						+e.item-price <sub>от</sub> 15 000 <sub>руб.</sub>
+				+e.item
+					+e('a').link(href='#catalog-popup')
+						+e.item-img
+							+e('img')(src='%=staticPrefix=%img/assets/catalog/catalog_item_3.jpg' alt='product')
+						+e.item-title &#171;В духе ампира&#187;
+						+e.item-price <sub>от</sub> 45 000 <sub>руб.</sub>
+				+e.item
+					+e('a').link(href='#catalog-popup')
+						+e.item-img
+							+e('img')(src='%=staticPrefix=%img/assets/catalog/catalog_item_4.jpg' alt='product')
+						+e.item-title &#171;Сочный Лофт&#187;
+						+e.item-price <sub>от</sub> 15 000 <sub>руб.</sub>
+				+e.item
+					+e('a').link(href='#catalog-popup')
+						+e.item-img
+							+e('img')(src='%=staticPrefix=%img/assets/catalog/catalog_item_5.jpg' alt='product')
+						+e.item-title &#171;Цветочный мир&#187;
+						+e.item-price <sub>от</sub> 35 000 <sub>руб.</sub>
+
+				+e.item
+					+e('a').link(href='#catalog-popup')
+						+e.item-img
+							+e('img')(src='%=staticPrefix=%img/assets/catalog/catalog_item_4.jpg' alt='product')
+						+e.item-title &#171;Сочный Лофт&#187;
+						+e.item-price <sub>от</sub> 15 000 <sub>руб.</sub>
+				+e.item
+					+e('a').link(href='#catalog-popup')
+						+e.item-img
+							+e('img')(src='%=staticPrefix=%img/assets/catalog/catalog_item_5.jpg' alt='product')
+						+e.item-title &#171;Цветочный мир&#187;
+						+e.item-price <sub>от</sub> 35 000 <sub>руб.</sub>
+				+e.item
+					+e('a').link(href='#catalog-popup')
+						+e.item-img
+							+e('img')(src='%=staticPrefix=%img/assets/catalog/catalog_item_3.jpg' alt='product')
+						+e.item-title &#171;В духе ампира&#187;
+						+e.item-price <sub>от</sub> 45 000 <sub>руб.</sub>
+				+e.item
+					+e('a').link(href='#catalog-popup')
+						+e.item-img
+							+e('img')(src='%=staticPrefix=%img/assets/catalog/catalog_item_1.jpg' alt='product')
+						+e.item-title &#171;Мусс из лесных ягод&#187;
+						+e.item-price <sub>от</sub> 25 000 <sub>руб.</sub>
+				+e.item
+					+e('a').link(href='#catalog-popup')
+						+e.item-img
+							+e('img')(src='%=staticPrefix=%img/assets/catalog/catalog_item_2.jpg' alt='product')
+						+e.item-title &#171;Окно в модерн&#187;
+						+e.item-price <sub>от</sub> 15 000 <sub>руб.</sub>
+				+e.item
+					+e('a').link(href='#catalog-popup')
+						+e.item-img
+							+e('img')(src='%=staticPrefix=%img/assets/catalog/catalog_item_1.jpg' alt='product')
+						+e.item-title &#171;Мусс из лесных ягод&#187;
+						+e.item-price <sub>от</sub> 25 000 <sub>руб.</sub>
+				+e.item
+					+e('a').link(href='#catalog-popup')
+						+e.item-img
+							+e('img')(src='%=staticPrefix=%img/assets/catalog/catalog_item_2.jpg' alt='product')
+						+e.item-title &#171;Окно в модерн&#187;
+						+e.item-price <sub>от</sub> 15 000 <sub>руб.</sub>
+				+e.item
+					+e('a').link(href='#catalog-popup')
+						+e.item-img
+							+e('img')(src='%=staticPrefix=%img/assets/catalog/catalog_item_3.jpg' alt='product')
+						+e.item-title &#171;В духе ампира&#187;
+						+e.item-price <sub>от</sub> 45 000 <sub>руб.</sub>
+				+e.item
+					+e('a').link(href='#catalog-popup')
+						+e.item-img
+							+e('img')(src='%=staticPrefix=%img/assets/catalog/catalog_item_4.jpg' alt='product')
+						+e.item-title &#171;Сочный Лофт&#187;
+						+e.item-price <sub>от</sub> 15 000 <sub>руб.</sub>
+				+e.item
+					+e('a').link(href='#catalog-popup')
+						+e.item-img
+							+e('img')(src='%=staticPrefix=%img/assets/catalog/catalog_item_5.jpg' alt='product')
+						+e.item-title &#171;Цветочный мир&#187;
+						+e.item-price <sub>от</sub> 35 000 <sub>руб.</sub>
+				+e.item
+					+e('a').link(href='#catalog-popup')
+						+e.item-img
+							+e('img')(src='%=staticPrefix=%img/assets/catalog/catalog_item_4.jpg' alt='product')
+						+e.item-title &#171;Сочный Лофт&#187;
+						+e.item-price <sub>от</sub> 15 000 <sub>руб.</sub>
+				+e.item
+					+e('a').link(href='#catalog-popup')
+						+e.item-img
+							+e('img')(src='%=staticPrefix=%img/assets/catalog/catalog_item_5.jpg' alt='product')
+						+e.item-title &#171;Цветочный мир&#187;
+						+e.item-price <sub>от</sub> 35 000 <sub>руб.</sub>
+				+e.item
+					+e('a').link(href='#catalog-popup')
+						+e.item-img
+							+e('img')(src='%=staticPrefix=%img/assets/catalog/catalog_item_3.jpg' alt='product')
+						+e.item-title &#171;В духе ампира&#187;
+						+e.item-price <sub>от</sub> 45 000 <sub>руб.</sub>
+				+e.item
+					+e('a').link(href='#catalog-popup')
+						+e.item-img
+							+e('img')(src='%=staticPrefix=%img/assets/catalog/catalog_item_1.jpg' alt='product')
+						+e.item-title &#171;Мусс из лесных ягод&#187;
+						+e.item-price <sub>от</sub> 25 000 <sub>руб.</sub>
+				+e.item
+					+e('a').link(href='#catalog-popup')
+						+e.item-img
+							+e('img')(src='%=staticPrefix=%img/assets/catalog/catalog_item_2.jpg' alt='product')
+						+e.item-title &#171;Окно в модерн&#187;
+						+e.item-price <sub>от</sub> 15 000 <sub>руб.</sub>
+				+e.item
+					+e('a').link(href='#catalog-popup')
+						+e.item-img
+							+e('img')(src='%=staticPrefix=%img/assets/catalog/catalog_item_1.jpg' alt='product')
+						+e.item-title &#171;Мусс из лесных ягод&#187;
+						+e.item-price <sub>от</sub> 25 000 <sub>руб.</sub>
+				+e.item
+					+e('a').link(href='#catalog-popup')
+						+e.item-img
+							+e('img')(src='%=staticPrefix=%img/assets/catalog/catalog_item_2.jpg' alt='product')
+						+e.item-title &#171;Окно в модерн&#187;
+						+e.item-price <sub>от</sub> 15 000 <sub>руб.</sub>
+				+e.item
+					+e('a').link(href='#catalog-popup')
+						+e.item-img
+							+e('img')(src='%=staticPrefix=%img/assets/catalog/catalog_item_3.jpg' alt='product')
+						+e.item-title &#171;В духе ампира&#187;
+						+e.item-price <sub>от</sub> 45 000 <sub>руб.</sub>
+				+e.item
+					+e('a').link(href='#catalog-popup')
+						+e.item-img
+							+e('img')(src='%=staticPrefix=%img/assets/catalog/catalog_item_4.jpg' alt='product')
+						+e.item-title &#171;Сочный Лофт&#187;
+						+e.item-price <sub>от</sub> 15 000 <sub>руб.</sub>
+				+e.item
+					+e('a').link(href='#catalog-popup')
+						+e.item-img
+							+e('img')(src='%=staticPrefix=%img/assets/catalog/catalog_item_5.jpg' alt='product')
+						+e.item-title &#171;Цветочный мир&#187;
+						+e.item-price <sub>от</sub> 35 000 <sub>руб.</sub>
+			+pagination()
+
+		+b.popup-catalog.mfp-hide#catalog-popup
+			+e.top
+				+e('h1').title «Окно в модерн»
+				+e.buttons
+					+e('a').button._more(href='#' title='') Подробнее
+					+e('a').button._order(href='#' title='') Заказать шторы
+			+e.w
+				+e.body
+					+b('ul').catalog-slider
+						+e('li').item
+							+e('a').link(href='http://lorempixel.com/1280/800/city/1')
+								+e('img')(src='%=staticPrefix=%img/assets/catalog/catalog_slider_img_1.jpg' alt='product image')
+								+e.zoom
+						+e('li').item
+							+e('a').link(href='http://lorempixel.com/1280/800/city/1')
+								+e('img')(src='%=staticPrefix=%img/assets/catalog/catalog_slider_img_2.jpg' alt='product image')
+								+e.zoom
+						+e('li').item
+							+e('a').link(href='http://lorempixel.com/1280/800/city/1')
+								+e('img')(src='%=staticPrefix=%img/assets/catalog/catalog_slider_img_1.jpg' alt='product image')
+								+e.zoom
+						+e('li').item
+							+e('a').link(href='http://lorempixel.com/1280/800/city/1')
+								+e('img')(src='%=staticPrefix=%img/assets/catalog/catalog_slider_img_2.jpg' alt='product image')
+								+e.zoom
+						+e('li').item
+							+e('a').link(href='http://lorempixel.com/1280/800/city/1')
+								+e('img')(src='%=staticPrefix=%img/assets/catalog/catalog_slider_img_1.jpg' alt='product image')
+								+e.zoom
+
+					+b.catalog-thumbnails
+						+e('a').link(href='#' data-slide-index='0')
+							+e('img')(src='%=staticPrefix=%img/assets/catalog/catalog_slider_thumb_1.jpg' alt='slider thumb')
+						+e('a').link(href='#' data-slide-index='1')
+							+e('img')(src='%=staticPrefix=%img/assets/catalog/catalog_slider_thumb_2.jpg' alt='slider thumb')
+						+e('a').link(href='#' data-slide-index='2')
+							+e('img')(src='%=staticPrefix=%img/assets/catalog/catalog_slider_thumb_3.jpg' alt='slider thumb')
+						+e('a').link(href='#' data-slide-index='3')
+							+e('img')(src='%=staticPrefix=%img/assets/catalog/catalog_slider_thumb_4.jpg' alt='slider thumb')
+						+e('a').link(href='#' data-slide-index='4')
+							+e('img')(src='%=staticPrefix=%img/assets/catalog/catalog_slider_thumb_5.jpg' alt='slider thumb')
+				+e.footer
+					+b.popup-tabs
+						+e.nav
+							+e('a').nav-link(href='#tab-1' data-tab="tab-1") Описание
+							+e('a').nav-link._active(href='#tab-2'  data-tab="tab-2") Дополнительные товары
+						+e.content._1#tab-1
+							+e('ul').desc
+								+e('li').desc-row
+									+e.desc-title Цена:
+									+e.desc-val
+										+e('a')(href='#') от 25 000 р.
+								+e('li').desc-row
+									+e.desc-title Категория:
+									+e.desc-val
+										+e('a')(href='#') Standart+
+							+e('ul').desc
+								+e('li').desc-row
+									+e.desc-title Вид:
+									+e.desc-val
+										+e('a')(href='#') Стильные шторы
+								+e('li').desc-row
+									+e.desc-title Стиль:
+									+e.desc-val
+										+e('a')(href='#') Модерн
+							+e('ul').desc
+								+e('li').desc-row
+									+e.desc-title Комната:
+									+e.desc-val
+										+e('a')(href='#') Шторы для спальни
+								+e('li').desc-row
+									+e.desc-title Дизайнер:
+									+e.desc-val
+										+e('a')(href='#') Наталья Примерова
+
+						+e.content._active._2#tab-2
+							+b('ul').additional
+								+e('li').item
+									+e('a').link(href='#')
+										+e('img')(src='%=staticPrefix=%img/assets/catalog/additional_product_1.jpg')
+										+e.title Длинное наименование товара
+								+e('li').item
+									+e('a').link(href='#')
+										+e('img')(src='%=staticPrefix=%img/assets/catalog/additional_product_2.jpg')
+										+e.title Длинное наименование товара
+								+e('li').item
+									+e('a').link(href='#')
+										+e('img')(src='%=staticPrefix=%img/assets/catalog/additional_product_3.jpg')
+										+e.title Длинное наименование товара
+								+e('li').item
+									+e('a').link(href='#')
+										+e('img')(src='%=staticPrefix=%img/assets/catalog/additional_product_4.jpg')
+										+e.title Длинное наименование товара
+								+e('li').item
+									+e('a').link(href='#')
+										+e('img')(src='%=staticPrefix=%img/assets/catalog/additional_product_5.jpg')
+										+e.title Длинное наименование товара

@@ -1,0 +1,127 @@
+.choose
+	background url('../img/general/selection.jpg') 50% 0 no-repeat
+	background-size cover
+	&__in
+		padding-top 55px
+		padding-bottom 58px
+		min-height 704px
+	&__title
+		margin-bottom 42px
+		font-pfbld(30px,1)
+		color #4d4d4d
+		text-align center
+
+.tabs
+	&__nav
+		margin-bottom 41px
+		text-align center
+		clearfix()
+	&__nav-link
+		margin-left 10px
+		padding 8px 24px
+		background $white
+		display inline-block
+		font-pfbld(16px,18px)
+		color #f25d73
+		border-radius 2px 1px 1px 2px
+		text-decoration none
+		&_active
+			background-color #f25d73
+			color $white
+		&:first-child
+			margin-left 0
+	&__content
+		position relative
+		min-height 10px
+		display none
+		clearfix()
+		&_active
+			display block
+
+.carousel
+	position relative
+	clearfix()
+	&__item
+		margin-right 28px
+		width 246px
+		float left
+		text-align center
+		&:first-child,
+		&:last-child
+			margin-left 0
+	&__link
+		border 2px solid transparent
+		margin-top 0
+		margin-bottom 0
+		padding 5px
+		width 246px
+		height 402px
+		display block
+		text-decoration none
+		color #4d4d4d
+		background $white
+		box-shadow 0 0 10px #e5e5e5
+		transform scale(1)
+		&:hover
+			border 2px solid #f25d73
+			margin-top -15px
+			margin-bottom -17px
+			height 436px
+			text-decoration none
+			// transform scale(1.05)
+			transition all .3s ease-in-out
+			.carousel__image
+				height 170px
+				transition all .3s ease-in-out
+				img
+					max-width 100%
+					height 170px
+					transition all .3s ease-in-out
+	&__image
+		margin-bottom 18px
+		width 233px
+		height 155px
+		display block
+		overflow hidden
+		img
+			height 155px
+	&__title
+		margin-bottom 10px
+		display block
+		font-pfbld(18px,24px)
+
+	&__text
+		margin-bottom 21px
+		padding 0 10px
+		display block
+		font-pfreg(14px,24px)
+	.owl-nav
+		position absolute
+		top 50%
+		margin-top -22px
+		width 100%
+		z-index 1
+	.owl-prev,
+	.owl-next
+		position absolute
+		top 50%
+		text-indent -9999px
+	.owl-next
+		right -31px
+		bg($arrowright)
+	.owl-prev
+		left -31px
+		bg($arrowleft)
+
+
+
+.owl-carousel .owl-stage-outer
+	padding-left 7px
+
+.carousel.owl-carousel .owl-item
+	position relative
+	padding-top 20px
+	padding-bottom 17px
+
+
+

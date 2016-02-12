@@ -1,0 +1,9 @@
+include ../content-shtory/content-shtory
+include ../sidebar-shtory/sidebar-shtory
+
+
+mixin shtory(data)
+	+b.shtory.inner
+		+e.in
+			+content-shtory()
+			+sidebar-shtory()

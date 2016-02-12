@@ -1,0 +1,10 @@
+include ../sidebar/sidebar
+include ../content/content
+
+//- include ../sidebar/sidebar
+
+mixin category(data)
+	+b.category
+		+e.in
+			+sidebar()
+			+content()

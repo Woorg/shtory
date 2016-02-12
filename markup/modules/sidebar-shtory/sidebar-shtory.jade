@@ -1,0 +1,34 @@
+mixin sidebar-shtory(data)
+	+b.sidebar._right
+		+b.designer-card
+			+e.title Марфа Константинопольская
+			+e.position дизайнер
+			+e.image
+				+e('img')(src='%=staticPrefix=%img/assets/sidebar-shtory/designer_img.jpg' alt='photo')
+			+e.text._1 Творческое начало в дизайн-проектах Натальи обусловлено образованием, по специальности она художник.
+			+e.text._2 В своей работе Наталья никогда не использует стандартные решения, ей удается сохранять оригинальность
+			+e.phone-w
+				+e.phone-title Контактный телефон в
+					+e('a')(href='#' title='#') Новгороде:
+				+e.phone-number +8 (495) 123-45-67
+		+b.portfolio
+			+e('h2').title Портфолио
+			+e.items
+				+e.item
+					+e('a').link(href='#')
+						+e.item-image
+							+e('img')(src='%=staticPrefix=%img/assets/sidebar-shtory/portf_img_1.jpg' alt='portfolio image')
+						+e.item-title Французские шторы
+						+e.item-price От 15 000 руб.
+				+e.item
+					+e('a').link(href='#')
+						+e.item-image
+							+e('img')(src='%=staticPrefix=%img/assets/sidebar-shtory/portf_img_2.jpg' alt='portfolio image')
+						+e.item-title Австрийские шторы
+						+e.item-price От 25 000 руб.
+				+e.item
+					+e('a').link(href='#')
+						+e.item-image
+							+e('img')(src='%=staticPrefix=%img/assets/sidebar-shtory/portf_img_3.jpg' alt='portfolio image')
+						+e.item-title Английские шторы
+						+e.item-price От 35 000 руб.

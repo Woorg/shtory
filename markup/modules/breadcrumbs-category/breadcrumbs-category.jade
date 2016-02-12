@@ -1,0 +1,11 @@
+mixin breadcrumbs-category(data)
+	+b('ol').breadcrumbs
+		+e('li').item
+			+e('a').link(href='#' title='Главная') Главная
+			| -
+		+e('li').item
+			+e('a').link(href='#' title='Виды штор') Виды штор
+			| -
+		+e('li').item
+			+e('span').current шторы с ламбрекеном
+

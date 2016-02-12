@@ -1,0 +1,54 @@
+.sidebar
+	margin-top 0
+	width 263px
+	float left
+	&_left
+		float left
+	&_right
+		float right
+.menu
+	border 1px solid #ebebeb
+	float left
+	width 263px
+	border-radius 15px 14px 14px 15px
+	&__link
+		padding 11px 18px 2px 17px
+		display block
+		background-color #fafafa
+		font-pfbld(18px,30px)
+		color #424242
+		text-decoration none
+	&__item
+		&:first-child
+			border-radius 15px 14px 0 0
+			.menu__link
+				border-radius 15px 14px 0 0
+.submenu
+	padding 8px 17px 34px
+	background $white
+	&:last-child
+		border-radius 0 0 14px 15px
+	&__item
+		margin-bottom 0
+	&__link
+		position relative
+		margin-left 10px
+		display block
+		font-pfreg(15px,24px)
+		color #747477
+		text-decoration none
+		&:before
+			position absolute
+			top 50%
+			left -10px
+			margin-top -13px
+			content "-"
+			color #805175
+		&:hover
+			color #805175
+			text-decoration underline
+		&_style-2
+			&:hover
+				font-pfbld(15px,24px)
+				color #805175
+				text-decoration underline
